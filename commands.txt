@@ -1,0 +1,3 @@
+module load alphafold/3.0.1
+salloc -p high-gpu-mem --gres gpu=1
+crun.alphafold run_alphafold.py --output_dir=/home/hqin/af3/output --json_path=/home/hqin/af3/test.json --model-dir=/home/hqin/af3/models
